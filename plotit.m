@@ -1,0 +1,25 @@
+function res = plotit(t,y)
+close all
+figure
+clf
+subplot(2,2,1)
+plot(t,y(:,1))
+title('x')
+ylabel('Position (m)')
+xlabel('Time (s)')
+subplot(2,2,2)
+plot(t,y(:,2))
+title('xdot')
+ylabel('Linear Velocity (m/s)')
+xlabel('Time (s)')
+subplot(2,2,3)
+plot(t,y(:,3))
+title('theta')
+ylabel('Angle (rad)')
+xlabel('Time (s)')
+subplot(2,2,4)
+plot(t,y(:,4))
+title('thetadot')
+ylabel('Angular Velocity (rad/s)')
+xlabel('Time (s)')
+end
