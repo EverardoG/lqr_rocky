@@ -1,4 +1,4 @@
-function res = plotit(t,y)
+function res = plotit(t,y,name)
 close all
 figure
 clf
@@ -22,4 +22,5 @@ plot(t,y(:,4))
 title('thetadot')
 ylabel('Angular Velocity (rad/s)')
 xlabel('Time (s)')
+suptitle(name)
 end
